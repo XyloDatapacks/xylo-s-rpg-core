@@ -1,0 +1,2 @@
+execute if score $xylo_rpg_core xvc.load_status matches 1 run tellraw @a ["",{"storage":"xvc_version:op","nbt":"packs[{namespace:xylo_rpg_core}].name","color":"aqua"},": loaded"]
+execute if score $xylo_rpg_core xvc.load_status matches 0 run tellraw @a ["",{"storage":"xvc_version:op","nbt":"packs[{namespace:xylo_rpg_core}].name","color":"aqua"},": failed to load"]
