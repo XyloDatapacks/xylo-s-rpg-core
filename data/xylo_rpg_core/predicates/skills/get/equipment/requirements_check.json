@@ -1,0 +1,85 @@
+{
+  "condition": "minecraft:all_of",
+  "terms": [
+    {
+      "condition": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "xrpgc.skills.strength": {
+          "min": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "#xrpgc.skills.get.equipment.generic.strength.requirement"
+            },
+            "score": "xrpgc.op"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "xrpgc.skills.dexterity": {
+          "min": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "#xrpgc.skills.get.equipment.generic.dexterity.requirement"
+            },
+            "score": "xrpgc.op"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "xrpgc.skills.agility": {
+          "min": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "#xrpgc.skills.get.equipment.generic.agility.requirement"
+            },
+            "score": "xrpgc.op"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "xrpgc.skills.constitution": {
+          "min": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "#xrpgc.skills.get.equipment.generic.constitution.requirement"
+            },
+            "score": "xrpgc.op"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "xrpgc.skills.intelligence": {
+          "min": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "#xrpgc.skills.get.equipment.generic.intelligence.requirement"
+            },
+            "score": "xrpgc.op"
+          }
+        }
+      }
+    }
+  ]
+}

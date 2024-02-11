@@ -1,0 +1,1 @@
+give @s minecraft:diamond_sword{xylo_rpg_core:{skills:{intelligence:10,agility:5}}}
