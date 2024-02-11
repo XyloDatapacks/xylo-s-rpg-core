@@ -1,1 +1,1 @@
-give @s minecraft:diamond_boots{xylo_rpg_core:{skills:{intelligence:10,strength:5}}}
+give @s minecraft:diamond_boots{xylo_rpg_core:{skills:{intelligence:10,strength:5},requirement:{constitution:4}}}

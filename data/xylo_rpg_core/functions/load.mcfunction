@@ -49,6 +49,19 @@ scoreboard objectives add xrpgc.skills.constitution_class dummy
 scoreboard objectives add xrpgc.skills.intelligence_class dummy
 
 
+#==<Classes>==#
+
+# class selection
+scoreboard objectives add xrpgc.class.berserker dummy
+scoreboard objectives add xrpgc.class.paladin dummy
+scoreboard objectives add xrpgc.class.sorcerer dummy
+scoreboard objectives add xrpgc.class.warlock dummy
+scoreboard objectives add xrpgc.class.hunter dummy
+scoreboard objectives add xrpgc.class.thief dummy
+scoreboard objectives add xrpgc.class.assassin dummy
+scoreboard objectives add xrpgc.class.monk dummy
+scoreboard objectives add xrpgc.class.thinker dummy
+scoreboard objectives add xrpgc.class.revenant dummy
 
 # revoke advancements
 advancement revoke @a from xylo_rpg_core:revoke

@@ -1,1 +1,1 @@
-give @s minecraft:diamond_helmet{xylo_rpg_core:{skills:{dexterity:10,agility:5}}}
+give @s minecraft:diamond_helmet{xylo_rpg_core:{skills:{dexterity:10,agility:5},requirement:{constitution:4}}}

@@ -2,13 +2,16 @@
 # @context: parent context
 # @within: xylo_rpg_core:skills/get/start
 
+# reset weight
+function xylo_rpg_core:equipment/weight/reset/mainhand
+
 # requirements check
 execute store result score #xrpgc.skills.get.equipment.generic.strength.requirement xrpgc.op run data get storage xylo_rpg_core:op player_data.SelectedItem.tag.xylo_rpg_core.requirement.strength
 execute store result score #xrpgc.skills.get.equipment.generic.dexterity.requirement xrpgc.op run data get storage xylo_rpg_core:op player_data.SelectedItem.tag.xylo_rpg_core.requirement.dexterity
 execute store result score #xrpgc.skills.get.equipment.generic.agility.requirement xrpgc.op run data get storage xylo_rpg_core:op player_data.SelectedItem.tag.xylo_rpg_core.requirement.agility
 execute store result score #xrpgc.skills.get.equipment.generic.constitution.requirement xrpgc.op run data get storage xylo_rpg_core:op player_data.SelectedItem.tag.xylo_rpg_core.requirement.constitution
 execute store result score #xrpgc.skills.get.equipment.generic.intelligence.requirement xrpgc.op run data get storage xylo_rpg_core:op player_data.SelectedItem.tag.xylo_rpg_core.requirement.intelligence
-execute unless predicate xylo_rpg_core:skills/get/equipment/requirements_check run return 0
+execute unless predicate xylo_rpg_core:skills/get/equipment/requirements_check run return run function xylo_rpg_core:equipment/weight/check/mainhand
 
 # get skills
 execute store result score #xrpgc.skills.get.equipment.mainhand.strength xrpgc.op run data get storage xylo_rpg_core:op player_data.SelectedItem.tag.xylo_rpg_core.skills.strength

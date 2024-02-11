@@ -1,1 +1,1 @@
-give @s minecraft:shield{xylo_rpg_core:{skills:{constitution:10,agility:5}}}
+give @s minecraft:shield{xylo_rpg_core:{skills:{constitution:10,agility:5},requirement:{strength:4}}}

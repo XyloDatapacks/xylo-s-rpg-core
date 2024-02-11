@@ -1,4 +1,4 @@
-#> xylo_rpg_core:skills/class/validate_values
+#> xylo_rpg_core:classes/validate_skills
 # @context: as any entity with skills
 # @within: any call
 

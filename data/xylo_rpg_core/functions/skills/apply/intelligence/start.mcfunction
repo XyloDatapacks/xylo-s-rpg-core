@@ -12,3 +12,7 @@ execute store result storage xylo_rpg_core:op macro_data.speed double 0.05 run s
 execute store result storage xylo_rpg_core:op macro_data.jump double 0.03 run scoreboard players get @s xrpgc.skills.intelligence
 function xylo_rpg_core:skills/apply/intelligence/set with storage xylo_rpg_core:op macro_data 
 
+# max focus
+scoreboard players operation @s xem.mind.focus.max = #xem.mind.focus.max xem.op
+scoreboard players operation @s xem.mind.focus.max *= @s xrpgc.skills.intelligence
+scoreboard players operation @s xem.mind.focus.max /= #100 xconst
