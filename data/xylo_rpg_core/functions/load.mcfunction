@@ -48,6 +48,8 @@ scoreboard objectives add xrpgc.skills.agility_class dummy
 scoreboard objectives add xrpgc.skills.constitution_class dummy
 scoreboard objectives add xrpgc.skills.intelligence_class dummy
 
+# related sb
+scoreboard objectives add xrpgc.skills.dexterity.range_damage dummy
 
 #==<Classes>==#
 
@@ -62,6 +64,10 @@ scoreboard objectives add xrpgc.class.assassin dummy
 scoreboard objectives add xrpgc.class.monk dummy
 scoreboard objectives add xrpgc.class.thinker dummy
 scoreboard objectives add xrpgc.class.revenant dummy
+
+
+#==<Equipment>==#
+scoreboard objectives add xrpgc.equipment.weight dummy
 
 # revoke advancements
 advancement revoke @a from xylo_rpg_core:revoke

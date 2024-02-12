@@ -28,6 +28,7 @@ scoreboard players set @s xrpgc.skills.intelligence_equipment 0
 
 # get scores by adding equipment
 data modify storage xylo_rpg_core:op player_data set from entity @s {}
+scoreboard players reset @s xrpgc.equipment.weight
 function xylo_rpg_core:skills/get/equipment/head
 function xylo_rpg_core:skills/get/equipment/chest
 function xylo_rpg_core:skills/get/equipment/legs
