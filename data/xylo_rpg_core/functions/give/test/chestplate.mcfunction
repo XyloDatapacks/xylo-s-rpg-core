@@ -1,1 +1,1 @@
-give @s minecraft:diamond_chestplate{xylo_rpg_core:{skills:{dexterity:10,constitution:5},requirement:{constitution:4}}}
+give @s minecraft:diamond_chestplate{xylo_rpg_core:{skills:{dexterity:10,constitution:5},requirements:{constitution:4}}}

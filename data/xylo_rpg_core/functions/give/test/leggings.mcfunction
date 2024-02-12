@@ -1,1 +1,1 @@
-give @s minecraft:diamond_leggings{xylo_rpg_core:{skills:{strength:10,agility:5},requirement:{constitution:4}}}
+give @s minecraft:diamond_leggings{xylo_rpg_core:{skills:{strength:10,agility:5},requirements:{constitution:4}}}
