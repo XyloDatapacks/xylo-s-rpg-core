@@ -3,5 +3,5 @@
 # @within: any call
 
 
-scoreboard players reset @s xrpgc.equipment.weight
+scoreboard players reset @s xrpgc.equipment.weight 
 
