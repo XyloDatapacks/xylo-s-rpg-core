@@ -27,7 +27,7 @@ scoreboard players set @s xrpgc.skills.constitution_equipment 0
 scoreboard players set @s xrpgc.skills.intelligence_equipment 0
 
 # get scores by adding equipment
-data modify storage xylo_rpg_core:op player_data set from entity @s {}
+execute in minecraft:overworld run function xylo_rpg_core:skills/get/load_equipment
 function xylo_rpg_core:equipment/weight/reset/score
 
 function xylo_rpg_core:skills/get/equipment/head
