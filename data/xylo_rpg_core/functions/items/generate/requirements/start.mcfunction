@@ -1,34 +1,28 @@
 #> xylo_rpg_core:items/generate/requirements/start
 # @context: any
 # @within: any call
-# @input: "#xrpgc.items.generate.skills.level xrpgc.op"
+# @input: "#xrpgc.items.generate.level xrpgc.op", "#xrpgc.items.generate.rarity xrpgc.op"
 #
 # prepares the storages and scores to call the xylo_rpg_core:items/generate/requirements/set modifier
 
 tellraw @s[tag=xrpgc.debug.items.generate] "---------------------------"
 
-# get rarity
-data modify storage xylo_rpg_core:op macro_data set value {max:6}
-scoreboard players operation #xrpgc.items.generate.skills.min_rarity xrpgc.op = #xrpgc.items.generate.skills.level xrpgc.op
-scoreboard players operation #xrpgc.items.generate.skills.min_rarity xrpgc.op /= #50 xconst
-execute store result storage xylo_rpg_core:op macro_data.min int 1 run scoreboard players add #xrpgc.items.generate.skills.min_rarity xrpgc.op 1
-execute store result score #xrpgc.items.generate.skills.rarity xrpgc.op run function xylo_rpg_core:items/generate/skills/random with storage xylo_rpg_core:op macro_data
-tellraw @s[tag=xrpgc.debug.items.generate] ["rarity: ",{"score":{"objective":"xrpgc.op","name":"#xrpgc.items.generate.skills.rarity"}}]
 
 # get rolls
 data modify storage xylo_rpg_core:op macro_data set value {min:1}
-execute store result storage xylo_rpg_core:op macro_data.max int 2 run scoreboard players get #xrpgc.items.generate.skills.rarity xrpgc.op
+execute store result storage xylo_rpg_core:op macro_data.max int 2 run scoreboard players get #xrpgc.items.generate.rarity xrpgc.op
 execute store result score #xrpgc.items.generate.skills.rolls xrpgc.op run function xylo_rpg_core:items/generate/skills/random with storage xylo_rpg_core:op macro_data
 tellraw @s[tag=xrpgc.debug.items.generate] ["rolls: ",{"score":{"objective":"xrpgc.op","name":"#xrpgc.items.generate.skills.rolls"}}]
 
 # get total points
-scoreboard players operation #xrpgc.items.generate.skills.total_points xrpgc.op = #xrpgc.items.generate.skills.level xrpgc.op
+scoreboard players operation #xrpgc.items.generate.skills.total_points xrpgc.op = #xrpgc.items.generate.level xrpgc.op
 scoreboard players operation #xrpgc.items.generate.skills.total_points xrpgc.op /= #5 xconst
 tellraw @s[tag=xrpgc.debug.items.generate] ["total_points: ",{"score":{"objective":"xrpgc.op","name":"#xrpgc.items.generate.skills.total_points"}}]
 
 # average
 scoreboard players operation #xrpgc.items.generate.skills.average xrpgc.op = #xrpgc.items.generate.skills.total_points xrpgc.op
 scoreboard players operation #xrpgc.items.generate.skills.average xrpgc.op /= #xrpgc.items.generate.skills.rolls xrpgc.op
+scoreboard players operation #xrpgc.items.generate.skills.average xrpgc.op *= #2 xconst
 scoreboard players operation #xrpgc.items.generate.skills.average xrpgc.op /= #3 xconst
 tellraw @s[tag=xrpgc.debug.items.generate] ["average: ",{"score":{"objective":"xrpgc.op","name":"#xrpgc.items.generate.skills.average"}}]
 
@@ -36,7 +30,6 @@ tellraw @s[tag=xrpgc.debug.items.generate] ["average: ",{"score":{"objective":"x
 scoreboard players operation #xrpgc.items.generate.skills.variance xrpgc.op = #xrpgc.items.generate.skills.total_points xrpgc.op
 scoreboard players operation #xrpgc.items.generate.skills.variance xrpgc.op *= #2 xconst
 scoreboard players operation #xrpgc.items.generate.skills.variance xrpgc.op /= #xrpgc.items.generate.skills.rolls xrpgc.op
-scoreboard players operation #xrpgc.items.generate.skills.variance xrpgc.op /= #3 xconst
 tellraw @s[tag=xrpgc.debug.items.generate] ["variance: ",{"score":{"objective":"xrpgc.op","name":"#xrpgc.items.generate.skills.variance"}}]
 
 # reset skills
@@ -67,6 +60,7 @@ scoreboard players operation #xrpgc.items.generate.skills.missing xrpgc.op -= #x
 tellraw @s[tag=xrpgc.debug.items.generate] ["missing: ",{"score":{"objective":"xrpgc.op","name":"#xrpgc.items.generate.skills.missing"}}]
 
 # assign missing points to a proficiency skill
+# TODO: add selection of the real prof skill
 scoreboard players set #xrpgc.items.generate.skills.selection xrpgc.op 3
 execute if score #xrpgc.items.generate.skills.selection xrpgc.op matches 1 run scoreboard players operation #xrpgc.items.generate.skills.assigned.strength xrpgc.op += #xrpgc.items.generate.skills.missing xrpgc.op
 execute if score #xrpgc.items.generate.skills.selection xrpgc.op matches 2 run scoreboard players operation #xrpgc.items.generate.skills.assigned.dexterity xrpgc.op += #xrpgc.items.generate.skills.missing xrpgc.op
@@ -82,9 +76,9 @@ scoreboard players operation #xrpgc.items.generate.skills.assigned.constitution 
 scoreboard players operation #xrpgc.items.generate.skills.assigned.intelligence xrpgc.op > #0 xconst
 
 # create output
-data remove storage xylo_rpg_core:op skills
-execute unless score #xrpgc.items.generate.skills.assigned.strength xrpgc.op matches 0 store result storage xylo_rpg_core:op skills.strength int 1 run scoreboard players get #xrpgc.items.generate.skills.assigned.strength xrpgc.op 
-execute unless score #xrpgc.items.generate.skills.assigned.dexterity xrpgc.op matches 0 store result storage xylo_rpg_core:op skills.dexterity int 1 run scoreboard players get #xrpgc.items.generate.skills.assigned.dexterity xrpgc.op
-execute unless score #xrpgc.items.generate.skills.assigned.agility xrpgc.op matches 0 store result storage xylo_rpg_core:op skills.agility int 1 run scoreboard players get #xrpgc.items.generate.skills.assigned.agility xrpgc.op 
-execute unless score #xrpgc.items.generate.skills.assigned.constitution xrpgc.op matches 0 store result storage xylo_rpg_core:op skills.constitution int 1 run scoreboard players get #xrpgc.items.generate.skills.assigned.constitution xrpgc.op 
-execute unless score #xrpgc.items.generate.skills.assigned.intelligence xrpgc.op matches 0 store result storage xylo_rpg_core:op skills.intelligence int 1 run scoreboard players get #xrpgc.items.generate.skills.assigned.intelligence xrpgc.op 
+data remove storage xylo_rpg_core:op requirements
+execute unless score #xrpgc.items.generate.skills.assigned.strength xrpgc.op matches 0 store result storage xylo_rpg_core:op requirements.strength int 1 run scoreboard players get #xrpgc.items.generate.skills.assigned.strength xrpgc.op 
+execute unless score #xrpgc.items.generate.skills.assigned.dexterity xrpgc.op matches 0 store result storage xylo_rpg_core:op requirements.dexterity int 1 run scoreboard players get #xrpgc.items.generate.skills.assigned.dexterity xrpgc.op
+execute unless score #xrpgc.items.generate.skills.assigned.agility xrpgc.op matches 0 store result storage xylo_rpg_core:op requirements.agility int 1 run scoreboard players get #xrpgc.items.generate.skills.assigned.agility xrpgc.op 
+execute unless score #xrpgc.items.generate.skills.assigned.constitution xrpgc.op matches 0 store result storage xylo_rpg_core:op requirements.constitution int 1 run scoreboard players get #xrpgc.items.generate.skills.assigned.constitution xrpgc.op 
+execute unless score #xrpgc.items.generate.skills.assigned.intelligence xrpgc.op matches 0 store result storage xylo_rpg_core:op requirements.intelligence int 1 run scoreboard players get #xrpgc.items.generate.skills.assigned.intelligence xrpgc.op 

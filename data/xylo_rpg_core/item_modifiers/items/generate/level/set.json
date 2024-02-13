@@ -7,8 +7,8 @@
     },
     "ops": [
       {
-        "source": "requirements",
-        "target": "xylo_rpg_core.requirements",
+        "source": "level",
+        "target": "xylo_rpg_core.level",
         "op": "replace"
       }
     ]

@@ -1,28 +1,21 @@
 #> xylo_rpg_core:items/generate/skills/start
 # @context: any
 # @within: any call
-# @input: "#xrpgc.items.generate.skills.level xrpgc.op"
+# @input: "#xrpgc.items.generate.level xrpgc.op", "#xrpgc.items.generate.rarity xrpgc.op"
 #
 # prepares the storages and scores to call the xylo_rpg_core:items/generate/skills/set modifier
 
 tellraw @s[tag=xrpgc.debug.items.generate] "---------------------------"
 
-# get rarity
-data modify storage xylo_rpg_core:op macro_data set value {max:6}
-scoreboard players operation #xrpgc.items.generate.skills.min_rarity xrpgc.op = #xrpgc.items.generate.skills.level xrpgc.op
-scoreboard players operation #xrpgc.items.generate.skills.min_rarity xrpgc.op /= #50 xconst
-execute store result storage xylo_rpg_core:op macro_data.min int 1 run scoreboard players add #xrpgc.items.generate.skills.min_rarity xrpgc.op 1
-execute store result score #xrpgc.items.generate.skills.rarity xrpgc.op run function xylo_rpg_core:items/generate/skills/random with storage xylo_rpg_core:op macro_data
-tellraw @s[tag=xrpgc.debug.items.generate] ["rarity: ",{"score":{"objective":"xrpgc.op","name":"#xrpgc.items.generate.skills.rarity"}}]
 
 # get rolls
 data modify storage xylo_rpg_core:op macro_data set value {min:1}
-execute store result storage xylo_rpg_core:op macro_data.max int 2 run scoreboard players get #xrpgc.items.generate.skills.rarity xrpgc.op
+execute store result storage xylo_rpg_core:op macro_data.max int 2 run scoreboard players get #xrpgc.items.generate.rarity xrpgc.op
 execute store result score #xrpgc.items.generate.skills.rolls xrpgc.op run function xylo_rpg_core:items/generate/skills/random with storage xylo_rpg_core:op macro_data
 tellraw @s[tag=xrpgc.debug.items.generate] ["rolls: ",{"score":{"objective":"xrpgc.op","name":"#xrpgc.items.generate.skills.rolls"}}]
 
 # get total points
-scoreboard players operation #xrpgc.items.generate.skills.total_points xrpgc.op = #xrpgc.items.generate.skills.level xrpgc.op
+scoreboard players operation #xrpgc.items.generate.skills.total_points xrpgc.op = #xrpgc.items.generate.level xrpgc.op
 scoreboard players operation #xrpgc.items.generate.skills.total_points xrpgc.op /= #2 xconst
 tellraw @s[tag=xrpgc.debug.items.generate] ["total_points: ",{"score":{"objective":"xrpgc.op","name":"#xrpgc.items.generate.skills.total_points"}}]
 

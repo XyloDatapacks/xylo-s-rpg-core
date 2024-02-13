@@ -7,8 +7,8 @@
     },
     "ops": [
       {
-        "source": "requirements",
-        "target": "xylo_rpg_core.requirements",
+        "source": "sockets",
+        "target": "xylo_rpg_core.sockets",
         "op": "replace"
       }
     ]
