@@ -11,6 +11,10 @@ scoreboard objectives add xrpgc.op dummy
 execute store result score #xrpgc.pack_version xrpgc.op run data get storage xvc_version:op packs[{namespace:"xylo_rpg_core"}].version
 scoreboard objectives add xrpgc.player_version dummy
 
+#==<Level>==#
+scoreboard objectives add xrpgc.level dummy
+scoreboard objectives add xrpgc.xp dummy
+
 #==<Skills>==#
 
 # total value

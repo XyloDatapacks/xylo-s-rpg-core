@@ -1,7 +1,7 @@
 #> xylo_rpg_core:items/generate/lore/start
 # @context: any
 # @within: any call
-# @input: "xylo_rpg_core:op temp_item"
+# @input: same outputs as function: xylo_rpg_core:items/generate/lore/get_data
 #
 # prepares the storages and scores to call the xylo_rpg_core:items/generate/lore/set modifier
 

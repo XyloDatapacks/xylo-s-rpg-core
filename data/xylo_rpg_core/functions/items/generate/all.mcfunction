@@ -1,7 +1,7 @@
-#> xylo_rpg_core:items/generate/skills/start
+#> xylo_rpg_core:items/generate/all
 # @context: any
 # @within: any call
-# @input: "#xrpgc.items.generate.level xrpgc.op"
+# @input: "#xrpgc.items.generate.level xrpgc.op", "#xrpgc.items.generate.proficiency xrpgc.op"
 
 
 function xylo_rpg_core:items/generate/level/start
@@ -10,4 +10,4 @@ function xylo_rpg_core:items/generate/skills/start
 function xylo_rpg_core:items/generate/requirements/start
 function xylo_rpg_core:items/generate/sockets/start
 function xylo_rpg_core:items/generate/lore/start
-item modify entity @s weapon.mainhand xylo_rpg_core:items/generate/set
+

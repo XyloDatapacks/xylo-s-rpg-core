@@ -12,7 +12,7 @@ execute store result storage xylo_rpg_core:op macro_data.step double 0.04 run sc
 function xylo_rpg_core:skills/apply/dexterity/set with storage xylo_rpg_core:op macro_data 
 
 # range damage multiplier (*100)
-scoreboard players set @s xrpgc.skills.dexterity.range_damage 500
+scoreboard players set @s xrpgc.skills.dexterity.range_damage 1000
 scoreboard players operation @s xrpgc.skills.dexterity.range_damage *= @s xrpgc.skills.dexterity
 scoreboard players operation @s xrpgc.skills.dexterity.range_damage /= #100 xconst
 

@@ -45,6 +45,7 @@ scoreboard players operation @s xrpgc.skills.constitution += @s xrpgc.skills.con
 scoreboard players operation @s xrpgc.skills.intelligence += @s xrpgc.skills.intelligence_equipment
 
 #==<Class Bonus>==#
+function xylo_rpg_core:classes/validate_skills
 scoreboard players operation @s xrpgc.skills.strength *= @s xrpgc.skills.strength_class
 scoreboard players operation @s xrpgc.skills.dexterity *= @s xrpgc.skills.dexterity_class
 scoreboard players operation @s xrpgc.skills.agility *= @s xrpgc.skills.agility_class
@@ -57,5 +58,5 @@ scoreboard players operation @s xrpgc.skills.constitution /= #100 xconst
 scoreboard players operation @s xrpgc.skills.intelligence /= #100 xconst
 
 # debug
-tellraw @s[tag=xrpgc.debug.skills] ["--------------------------\nStrength: ",{"score":{"objective":"xrpgc.skills.strength","name":"@s"}},"\nDexterity: ",{"score":{"objective":"xrpgc.skills.dexterity","name":"@s"}},"\nAgility: ",{"score":{"objective":"xrpgc.skills.agility","name":"@s"}},"\nConstitution: ",{"score":{"objective":"xrpgc.skills.constitution","name":"@s"}},"\nIntelligence: ",{"score":{"objective":"xrpgc.skills.intelligence","name":"@s"}},"\n--------------------------"]
+tellraw @a[tag=xrpgc.debug.skills] ["--------------------------\nStrength: ",{"score":{"objective":"xrpgc.skills.strength","name":"@s"}},"\nDexterity: ",{"score":{"objective":"xrpgc.skills.dexterity","name":"@s"}},"\nAgility: ",{"score":{"objective":"xrpgc.skills.agility","name":"@s"}},"\nConstitution: ",{"score":{"objective":"xrpgc.skills.constitution","name":"@s"}},"\nIntelligence: ",{"score":{"objective":"xrpgc.skills.intelligence","name":"@s"}},"\n--------------------------"]
 

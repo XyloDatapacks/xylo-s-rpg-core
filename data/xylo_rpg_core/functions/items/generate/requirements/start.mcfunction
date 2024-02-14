@@ -1,7 +1,7 @@
 #> xylo_rpg_core:items/generate/requirements/start
 # @context: any
 # @within: any call
-# @input: "#xrpgc.items.generate.level xrpgc.op", "#xrpgc.items.generate.rarity xrpgc.op"
+# @input: "#xrpgc.items.generate.level xrpgc.op", "#xrpgc.items.generate.rarity xrpgc.op", "#xrpgc.items.generate.proficiency xrpgc.op"
 #
 # prepares the storages and scores to call the xylo_rpg_core:items/generate/requirements/set modifier
 
@@ -61,7 +61,7 @@ tellraw @s[tag=xrpgc.debug.items.generate] ["missing: ",{"score":{"objective":"x
 
 # assign missing points to a proficiency skill
 # TODO: add selection of the real prof skill
-scoreboard players set #xrpgc.items.generate.skills.selection xrpgc.op 3
+scoreboard players operation #xrpgc.items.generate.skills.selection xrpgc.op = #xrpgc.items.generate.proficiency xrpgc.op
 execute if score #xrpgc.items.generate.skills.selection xrpgc.op matches 1 run scoreboard players operation #xrpgc.items.generate.skills.assigned.strength xrpgc.op += #xrpgc.items.generate.skills.missing xrpgc.op
 execute if score #xrpgc.items.generate.skills.selection xrpgc.op matches 2 run scoreboard players operation #xrpgc.items.generate.skills.assigned.dexterity xrpgc.op += #xrpgc.items.generate.skills.missing xrpgc.op
 execute if score #xrpgc.items.generate.skills.selection xrpgc.op matches 3 run scoreboard players operation #xrpgc.items.generate.skills.assigned.agility xrpgc.op += #xrpgc.items.generate.skills.missing xrpgc.op
