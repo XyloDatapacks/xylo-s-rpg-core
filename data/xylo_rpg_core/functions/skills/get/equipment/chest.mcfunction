@@ -11,7 +11,7 @@ execute store result score #xrpgc.skills.get.equipment.generic.dexterity.require
 execute store result score #xrpgc.skills.get.equipment.generic.agility.requirement xrpgc.op run data get storage xylo_rpg_core:op equipment[{Slot:2b}].tag.xylo_rpg_core.requirements.agility
 execute store result score #xrpgc.skills.get.equipment.generic.constitution.requirement xrpgc.op run data get storage xylo_rpg_core:op equipment[{Slot:2b}].tag.xylo_rpg_core.requirements.constitution
 execute store result score #xrpgc.skills.get.equipment.generic.intelligence.requirement xrpgc.op run data get storage xylo_rpg_core:op equipment[{Slot:2b}].tag.xylo_rpg_core.requirements.intelligence
-execute unless predicate xylo_rpg_core:skills/get/equipment/requirements_check run return run function xylo_rpg_core:equipment/weight/check/chest
+execute unless predicate xylo_rpg_core:skills/get/equipment/requirements_check run return run function xylo_rpg_core:equipment/weight/apply/chest
 
 # get skills
 execute store result score #xrpgc.skills.get.equipment.chest.strength xrpgc.op run data get storage xylo_rpg_core:op equipment[{Slot:2b}].tag.xylo_rpg_core.skills.strength

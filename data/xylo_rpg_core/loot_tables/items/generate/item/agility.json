@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:tag",
+          "name": "xylo_rpg_core:equipment/proficiency_type/agility",
+          "expand": true
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{xylo_rpg_core:{proficiency:{index:3,name:\"agility\"}}}"
+        }
+      ]
+    }
+  ]
+}

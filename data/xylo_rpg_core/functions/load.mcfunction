@@ -73,6 +73,8 @@ scoreboard objectives add xrpgc.class.revenant dummy
 #==<Equipment>==#
 scoreboard objectives add xrpgc.equipment.weight dummy
 
+function xylo_rpg_core:_database
+
 # revoke advancements
 advancement revoke @a from xylo_rpg_core:revoke
 

@@ -2,6 +2,7 @@
 # @context: parent context, in overworld
 # @within: xylo_rpg_core:skills/get/start
 
+data remove storage xylo_rpg_core:op equipment 
 data modify block 29999999 0 12341232 Items set value []
 item replace block 29999999 0 12341232 container.0 from entity @s armor.feet
 item replace block 29999999 0 12341232 container.1 from entity @s armor.legs

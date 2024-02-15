@@ -1,4 +1,4 @@
-#> xylo_rpg_core:items/generate/all
+#> xylo_rpg_core:items/generate/data
 # @context: any
 # @within: any call
 # @input: "#xrpgc.items.generate.level xrpgc.op", "#xrpgc.items.generate.proficiency xrpgc.op"
