@@ -14,8 +14,12 @@ scoreboard objectives add xrpgc.player_version dummy
 #==<Level>==#
 scoreboard objectives add xrpgc.level dummy
 scoreboard objectives add xrpgc.xp dummy
+scoreboard objectives add xrpgc.xp_to_next_level dummy
 
 #==<Skills>==#
+
+# skill points
+scoreboard objectives add xrpgc.skills.skill_points dummy
 
 # total value
 scoreboard objectives add xrpgc.skills.strength dummy
