@@ -18,5 +18,9 @@
   {
     "function": "minecraft:reference",
     "name": "xylo_rpg_core:items/generate/lore/set"
+  },
+  {
+    "function": "minecraft:reference",
+    "name": "xylo_rpg_core:items/charm/generate/description/set"
   }
 ]
