@@ -73,9 +73,45 @@ scoreboard objectives add xrpgc.class.monk dummy
 scoreboard objectives add xrpgc.class.thinker dummy
 scoreboard objectives add xrpgc.class.revenant dummy
 
-
 #==<Equipment>==#
 scoreboard objectives add xrpgc.equipment.weight dummy
+
+#==<Entities>==#
+scoreboard objectives add xrpgc.entities.level dummy
+scoreboard objectives add xrpgc.entities.level.0 dummy
+scoreboard objectives add xrpgc.entities.level.1 dummy
+scoreboard objectives add xrpgc.entities.level.2 dummy
+scoreboard objectives add xrpgc.entities.level.3 dummy
+scoreboard objectives add xrpgc.entities.level.4 dummy
+scoreboard objectives add xrpgc.entities.level.5 dummy
+scoreboard objectives add xrpgc.entities.level.6 dummy
+scoreboard objectives add xrpgc.entities.level.7 dummy
+scoreboard objectives add xrpgc.entities.level.8 dummy
+scoreboard objectives add xrpgc.entities.level.9 dummy
+scoreboard objectives add xrpgc.entities.level.10 dummy
+scoreboard objectives add xrpgc.entities.level.11 dummy
+scoreboard objectives add xrpgc.entities.level.12 dummy
+scoreboard objectives add xrpgc.entities.level.13 dummy
+scoreboard objectives add xrpgc.entities.level.14 dummy
+scoreboard objectives add xrpgc.entities.level.15 dummy
+scoreboard objectives add xrpgc.entities.level.16 dummy
+scoreboard objectives add xrpgc.entities.level.17 dummy
+scoreboard objectives add xrpgc.entities.level.18 dummy
+scoreboard objectives add xrpgc.entities.level.19 dummy
+scoreboard objectives add xrpgc.entities.level.20 dummy
+scoreboard objectives add xrpgc.entities.level.21 dummy
+scoreboard objectives add xrpgc.entities.level.22 dummy
+scoreboard objectives add xrpgc.entities.level.23 dummy
+scoreboard objectives add xrpgc.entities.level.24 dummy
+scoreboard objectives add xrpgc.entities.level.25 dummy
+scoreboard objectives add xrpgc.entities.level.26 dummy
+scoreboard objectives add xrpgc.entities.level.27 dummy
+scoreboard objectives add xrpgc.entities.level.28 dummy
+scoreboard objectives add xrpgc.entities.level.29 dummy
+scoreboard objectives add xrpgc.entities.level.30 dummy
+scoreboard objectives add xrpgc.entities.level.31 dummy
+
+
 
 function xylo_rpg_core:_database
 

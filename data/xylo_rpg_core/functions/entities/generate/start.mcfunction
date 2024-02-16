@@ -7,6 +7,8 @@ tag @s add xrpgc.skills.set
 # get level
 execute store result score @s xrpgc.level run function xylo_rpg_core:entities/generate/get_level
 tellraw @a[tag=xrpgc.debug.entities.generate] ["--------------------------\nLevel: ",{"score":{"objective":"xrpgc.level","name":"@s"}}]
+# convert level to binary for advancements detection
+function xylo_rpg_core:entities/generate/set_level_binary
 
 # generate skills based on level
 execute store result score @s xrpgc.skills.strength_base run random value 50..150

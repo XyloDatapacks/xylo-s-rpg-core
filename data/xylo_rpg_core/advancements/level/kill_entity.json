@@ -25,46 +25,6 @@
         ]
       }
     },
-    "blocked": {
-      "trigger": "minecraft:player_killed_entity",
-      "conditions": {
-        "damage": {
-          "blocked": true
-        }
-      }
-    },
-    "not_blocked": {
-      "trigger": "minecraft:player_killed_entity",
-      "conditions": {
-        "damage": {
-          "blocked": false
-        }
-      }
-    },
-    "indirect_dmg": {
-      "trigger": "minecraft:player_killed_entity",
-      "conditions": {
-        "damage": {
-          "type": {
-            "direct_entity": {
-              "type": "#xylo_library:non_mob"
-            }
-          }
-        }
-      }
-    },
-    "direct_dmg": {
-      "trigger": "minecraft:player_killed_entity",
-      "conditions": {
-        "damage": {
-          "type": {
-            "direct_entity": {
-              "nbt": "{Attributes:[{}]}"
-            }
-          }
-        }
-      }
-    },
     "bit0": {
       "trigger": "minecraft:player_killed_entity",
       "conditions": {
@@ -73,7 +33,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.0": 1
+              "xrpgc.entities.level.0": 1
             }
           }
         ]
@@ -87,7 +47,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.1": 1
+              "xrpgc.entities.level.1": 1
             }
           }
         ]
@@ -101,7 +61,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.2": 1
+              "xrpgc.entities.level.2": 1
             }
           }
         ]
@@ -115,7 +75,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.3": 1
+              "xrpgc.entities.level.3": 1
             }
           }
         ]
@@ -129,7 +89,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.4": 1
+              "xrpgc.entities.level.4": 1
             }
           }
         ]
@@ -143,7 +103,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.5": 1
+              "xrpgc.entities.level.5": 1
             }
           }
         ]
@@ -157,7 +117,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.6": 1
+              "xrpgc.entities.level.6": 1
             }
           }
         ]
@@ -171,7 +131,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.7": 1
+              "xrpgc.entities.level.7": 1
             }
           }
         ]
@@ -185,7 +145,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.8": 1
+              "xrpgc.entities.level.8": 1
             }
           }
         ]
@@ -199,7 +159,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.9": 1
+              "xrpgc.entities.level.9": 1
             }
           }
         ]
@@ -213,7 +173,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.10": 1
+              "xrpgc.entities.level.10": 1
             }
           }
         ]
@@ -227,7 +187,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.11": 1
+              "xrpgc.entities.level.11": 1
             }
           }
         ]
@@ -241,7 +201,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.12": 1
+              "xrpgc.entities.level.12": 1
             }
           }
         ]
@@ -255,7 +215,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.13": 1
+              "xrpgc.entities.level.13": 1
             }
           }
         ]
@@ -269,7 +229,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.14": 1
+              "xrpgc.entities.level.14": 1
             }
           }
         ]
@@ -283,7 +243,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.15": 1
+              "xrpgc.entities.level.15": 1
             }
           }
         ]
@@ -297,7 +257,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.16": 1
+              "xrpgc.entities.level.16": 1
             }
           }
         ]
@@ -311,7 +271,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.17": 1
+              "xrpgc.entities.level.17": 1
             }
           }
         ]
@@ -325,7 +285,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.18": 1
+              "xrpgc.entities.level.18": 1
             }
           }
         ]
@@ -339,7 +299,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.19": 1
+              "xrpgc.entities.level.19": 1
             }
           }
         ]
@@ -353,7 +313,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.20": 1
+              "xrpgc.entities.level.20": 1
             }
           }
         ]
@@ -367,7 +327,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.21": 1
+              "xrpgc.entities.level.21": 1
             }
           }
         ]
@@ -381,7 +341,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.22": 1
+              "xrpgc.entities.level.22": 1
             }
           }
         ]
@@ -395,7 +355,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.23": 1
+              "xrpgc.entities.level.23": 1
             }
           }
         ]
@@ -409,7 +369,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.24": 1
+              "xrpgc.entities.level.24": 1
             }
           }
         ]
@@ -423,7 +383,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.25": 1
+              "xrpgc.entities.level.25": 1
             }
           }
         ]
@@ -437,7 +397,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.26": 1
+              "xrpgc.entities.level.26": 1
             }
           }
         ]
@@ -451,7 +411,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.27": 1
+              "xrpgc.entities.level.27": 1
             }
           }
         ]
@@ -465,7 +425,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.28": 1
+              "xrpgc.entities.level.28": 1
             }
           }
         ]
@@ -479,7 +439,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.29": 1
+              "xrpgc.entities.level.29": 1
             }
           }
         ]
@@ -493,7 +453,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.30": 1
+              "xrpgc.entities.level.30": 1
             }
           }
         ]
@@ -507,7 +467,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.31": 1
+              "xrpgc.entities.level.31": 1
             }
           }
         ]
@@ -521,7 +481,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.0": 0
+              "xrpgc.entities.level.0": 0
             }
           }
         ]
@@ -535,7 +495,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.1": 0
+              "xrpgc.entities.level.1": 0
             }
           }
         ]
@@ -549,7 +509,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.2": 0
+              "xrpgc.entities.level.2": 0
             }
           }
         ]
@@ -563,7 +523,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.3": 0
+              "xrpgc.entities.level.3": 0
             }
           }
         ]
@@ -577,7 +537,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.4": 0
+              "xrpgc.entities.level.4": 0
             }
           }
         ]
@@ -591,7 +551,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.5": 0
+              "xrpgc.entities.level.5": 0
             }
           }
         ]
@@ -605,7 +565,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.6": 0
+              "xrpgc.entities.level.6": 0
             }
           }
         ]
@@ -619,7 +579,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.7": 0
+              "xrpgc.entities.level.7": 0
             }
           }
         ]
@@ -633,7 +593,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.8": 0
+              "xrpgc.entities.level.8": 0
             }
           }
         ]
@@ -647,7 +607,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.9": 0
+              "xrpgc.entities.level.9": 0
             }
           }
         ]
@@ -661,7 +621,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.10": 0
+              "xrpgc.entities.level.10": 0
             }
           }
         ]
@@ -675,7 +635,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.11": 0
+              "xrpgc.entities.level.11": 0
             }
           }
         ]
@@ -689,7 +649,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.12": 0
+              "xrpgc.entities.level.12": 0
             }
           }
         ]
@@ -703,7 +663,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.13": 0
+              "xrpgc.entities.level.13": 0
             }
           }
         ]
@@ -717,7 +677,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.14": 0
+              "xrpgc.entities.level.14": 0
             }
           }
         ]
@@ -731,7 +691,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.15": 0
+              "xrpgc.entities.level.15": 0
             }
           }
         ]
@@ -745,7 +705,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.16": 0
+              "xrpgc.entities.level.16": 0
             }
           }
         ]
@@ -759,7 +719,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.17": 0
+              "xrpgc.entities.level.17": 0
             }
           }
         ]
@@ -773,7 +733,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.18": 0
+              "xrpgc.entities.level.18": 0
             }
           }
         ]
@@ -787,7 +747,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.19": 0
+              "xrpgc.entities.level.19": 0
             }
           }
         ]
@@ -801,7 +761,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.20": 0
+              "xrpgc.entities.level.20": 0
             }
           }
         ]
@@ -815,7 +775,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.21": 0
+              "xrpgc.entities.level.21": 0
             }
           }
         ]
@@ -829,7 +789,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.22": 0
+              "xrpgc.entities.level.22": 0
             }
           }
         ]
@@ -843,7 +803,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.23": 0
+              "xrpgc.entities.level.23": 0
             }
           }
         ]
@@ -857,7 +817,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.24": 0
+              "xrpgc.entities.level.24": 0
             }
           }
         ]
@@ -871,7 +831,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.25": 0
+              "xrpgc.entities.level.25": 0
             }
           }
         ]
@@ -885,7 +845,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.26": 0
+              "xrpgc.entities.level.26": 0
             }
           }
         ]
@@ -899,7 +859,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.27": 0
+              "xrpgc.entities.level.27": 0
             }
           }
         ]
@@ -913,7 +873,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.28": 0
+              "xrpgc.entities.level.28": 0
             }
           }
         ]
@@ -927,7 +887,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.29": 0
+              "xrpgc.entities.level.29": 0
             }
           }
         ]
@@ -941,7 +901,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.30": 0
+              "xrpgc.entities.level.30": 0
             }
           }
         ]
@@ -955,7 +915,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "xhd_entityid.31": 0
+              "xrpgc.entities.level.31": 0
             }
           }
         ]
@@ -966,16 +926,6 @@
     [
       "target",
       "not_target"
-    ],
-    [
-      "blocked",
-      "not_blocked"
-    ],
-    [
-      "target",
-      "not_target",
-      "indirect_dmg",
-      "direct_dmg"
     ],
     [
       "bit0",
@@ -1107,6 +1057,6 @@
     ]
   ],
   "rewards": {
-    "function": "xylo_hit_detection:player_killed_entity/reward"
+    "function": "xylo_rpg_core:level/xp/killed_entity"
   }
 }
