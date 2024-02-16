@@ -1,0 +1,16 @@
+[
+  {
+    "function": "minecraft:copy_nbt",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "xylo_rpg_core:op"
+    },
+    "ops": [
+      {
+        "source": "requirements",
+        "target": "xylo_rpg_core.charm.requirements",
+        "op": "replace"
+      }
+    ]
+  }
+]

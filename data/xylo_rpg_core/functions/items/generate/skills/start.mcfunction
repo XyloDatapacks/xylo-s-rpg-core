@@ -17,6 +17,7 @@ tellraw @s[tag=xrpgc.debug.items.generate] ["rolls: ",{"score":{"objective":"xrp
 # get total points
 scoreboard players operation #xrpgc.items.generate.skills.total_points xrpgc.op = #xrpgc.items.generate.level xrpgc.op
 scoreboard players operation #xrpgc.items.generate.skills.total_points xrpgc.op /= #2 xconst
+scoreboard players operation #xrpgc.items.generate.skills.total_points xrpgc.op > #1 xconst
 tellraw @s[tag=xrpgc.debug.items.generate] ["total_points: ",{"score":{"objective":"xrpgc.op","name":"#xrpgc.items.generate.skills.total_points"}}]
 
 # average

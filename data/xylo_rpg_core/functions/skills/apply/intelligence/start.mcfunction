@@ -7,10 +7,9 @@
 function xylo_rpg_core:skills/apply/intelligence/reset
 
 # apply stats
-data remove storage xylo_rpg_core:op macro_data 
-execute store result storage xylo_rpg_core:op macro_data.speed double 0.05 run scoreboard players get @s xrpgc.skills.intelligence
-execute store result storage xylo_rpg_core:op macro_data.jump double 0.03 run scoreboard players get @s xrpgc.skills.intelligence
-function xylo_rpg_core:skills/apply/intelligence/set with storage xylo_rpg_core:op macro_data 
+#data remove storage xylo_rpg_core:op macro_data 
+#execute store result storage xylo_rpg_core:op macro_data.input double 0.05 run scoreboard players get @s xrpgc.skills.intelligence
+#function xylo_rpg_core:skills/apply/intelligence/set with storage xylo_rpg_core:op macro_data 
 
 # max focus
 scoreboard players operation @s xem.mind.focus.max = #xem.mind.focus.max xem.op

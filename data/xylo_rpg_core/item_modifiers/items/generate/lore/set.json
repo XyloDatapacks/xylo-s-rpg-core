@@ -156,6 +156,12 @@
           "storage": "xylo_rpg_core:op",
           "interpret": true,
           "italic": false
+        },
+        {
+          "nbt": "sockets[0].description",
+          "storage": "xylo_rpg_core:op",
+          "interpret": true,
+          "italic": false
         }
       ]
     ],
@@ -187,6 +193,12 @@
           "storage": "xylo_rpg_core:op",
           "interpret": true,
           "italic": false
+        },
+        {
+          "nbt": "sockets[1].description",
+          "storage": "xylo_rpg_core:op",
+          "interpret": true,
+          "italic": false
         }
       ]
     ],
@@ -215,6 +227,12 @@
       [
         {
           "nbt": "lore.socket3",
+          "storage": "xylo_rpg_core:op",
+          "interpret": true,
+          "italic": false
+        },
+        {
+          "nbt": "sockets[2].description",
           "storage": "xylo_rpg_core:op",
           "interpret": true,
           "italic": false
