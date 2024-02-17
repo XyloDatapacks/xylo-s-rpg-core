@@ -23,17 +23,17 @@ execute store result score #xrpgc.skills.get.equipment.legs.intelligence xrpgc.o
 # charms
 data remove storage xylo_rpg_core:op temp_sockets
 data modify storage xylo_rpg_core:op temp_sockets set from storage xylo_rpg_core:op equipment[{Slot:1b}].tag.xylo_rpg_core.sockets
-function xylo_rpg_core:skills/get/charm/start
+function xylo_rpg_core:skills/get/charms/start
 # set charm ability id
-scoreboard players operation @s xrpgc.charms.legs.1 = #xrpgc.skills.get.charm.socket.1.ability_id xrpgc.op
-scoreboard players operation @s xrpgc.charms.legs.2 = #xrpgc.skills.get.charm.socket.2.ability_id xrpgc.op
-scoreboard players operation @s xrpgc.charms.legs.3 = #xrpgc.skills.get.charm.socket.3.ability_id xrpgc.op
+scoreboard players operation @s xrpgc.charms.legs.1 = #xrpgc.skills.get.charms.socket.1.ability_id xrpgc.op
+scoreboard players operation @s xrpgc.charms.legs.2 = #xrpgc.skills.get.charms.socket.2.ability_id xrpgc.op
+scoreboard players operation @s xrpgc.charms.legs.3 = #xrpgc.skills.get.charms.socket.3.ability_id xrpgc.op
 # add charm skills
-scoreboard players operation #xrpgc.skills.get.equipment.legs.strength xrpgc.op += #xrpgc.skills.get.charm.strength xrpgc.op
-scoreboard players operation #xrpgc.skills.get.equipment.legs.dexterity xrpgc.op += #xrpgc.skills.get.charm.dexterity xrpgc.op
-scoreboard players operation #xrpgc.skills.get.equipment.legs.agility xrpgc.op += #xrpgc.skills.get.charm.agility xrpgc.op
-scoreboard players operation #xrpgc.skills.get.equipment.legs.constitution xrpgc.op += #xrpgc.skills.get.charm.constitution xrpgc.op
-scoreboard players operation #xrpgc.skills.get.equipment.legs.intelligence xrpgc.op += #xrpgc.skills.get.charm.intelligence xrpgc.op
+scoreboard players operation #xrpgc.skills.get.equipment.legs.strength xrpgc.op += #xrpgc.skills.get.charms.strength xrpgc.op
+scoreboard players operation #xrpgc.skills.get.equipment.legs.dexterity xrpgc.op += #xrpgc.skills.get.charms.dexterity xrpgc.op
+scoreboard players operation #xrpgc.skills.get.equipment.legs.agility xrpgc.op += #xrpgc.skills.get.charms.agility xrpgc.op
+scoreboard players operation #xrpgc.skills.get.equipment.legs.constitution xrpgc.op += #xrpgc.skills.get.charms.constitution xrpgc.op
+scoreboard players operation #xrpgc.skills.get.equipment.legs.intelligence xrpgc.op += #xrpgc.skills.get.charms.intelligence xrpgc.op
 
 # add
 scoreboard players operation @s xrpgc.skills.strength_equipment += #xrpgc.skills.get.equipment.legs.strength xrpgc.op

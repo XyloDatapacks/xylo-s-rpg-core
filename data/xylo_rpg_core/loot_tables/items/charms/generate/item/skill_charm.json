@@ -1,0 +1,23 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:reference",
+              "name": "xylo_rpg_core:build_item/charms/skill_charm"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

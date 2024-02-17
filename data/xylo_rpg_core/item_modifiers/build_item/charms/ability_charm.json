@@ -1,0 +1,14 @@
+[
+  {
+    "function": "minecraft:set_name",
+    "name": {
+      "translate": "item.xylo_rpg_core.charms.base_name",
+      "color": "aqua",
+      "italic": false
+    }
+  },
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{xylo:{id:\"xylo_rpg_core:ability_charm\",id_tags:[\"xylo_rpg_core:charm\"]},xylo_rpg_core:{charm:{icon:\"@\"}}}"
+  }
+]

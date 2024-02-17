@@ -1,0 +1,26 @@
+[
+  {
+    "function": "minecraft:reference",
+    "name": "xylo_rpg_core:items/equipment/generate/level/set"
+  },
+  {
+    "function": "minecraft:reference",
+    "name": "xylo_rpg_core:items/equipment/generate/rarity/set"
+  },
+  {
+    "function": "minecraft:reference",
+    "name": "xylo_rpg_core:items/charms/generate/skills/set"
+  },
+  {
+    "function": "minecraft:reference",
+    "name": "xylo_rpg_core:items/charms/generate/requirements/set"
+  },
+  {
+    "function": "minecraft:reference",
+    "name": "xylo_rpg_core:items/equipment/generate/lore/set"
+  },
+  {
+    "function": "minecraft:reference",
+    "name": "xylo_rpg_core:items/charms/generate/description/set"
+  }
+]
