@@ -111,6 +111,26 @@ scoreboard objectives add xrpgc.entities.level.29 dummy
 scoreboard objectives add xrpgc.entities.level.30 dummy
 scoreboard objectives add xrpgc.entities.level.31 dummy
 
+#==<Charms>==#
+scoreboard objectives add xrpgc.charms.head.1 dummy
+scoreboard objectives add xrpgc.charms.head.2 dummy
+scoreboard objectives add xrpgc.charms.head.3 dummy
+scoreboard objectives add xrpgc.charms.chest.1 dummy
+scoreboard objectives add xrpgc.charms.chest.2 dummy
+scoreboard objectives add xrpgc.charms.chest.3 dummy
+scoreboard objectives add xrpgc.charms.legs.1 dummy
+scoreboard objectives add xrpgc.charms.legs.2 dummy
+scoreboard objectives add xrpgc.charms.legs.3 dummy
+scoreboard objectives add xrpgc.charms.feet.1 dummy
+scoreboard objectives add xrpgc.charms.feet.2 dummy
+scoreboard objectives add xrpgc.charms.feet.3 dummy
+scoreboard objectives add xrpgc.charms.mainhand.1 dummy
+scoreboard objectives add xrpgc.charms.mainhand.2 dummy
+scoreboard objectives add xrpgc.charms.mainhand.3 dummy
+scoreboard objectives add xrpgc.charms.offhand.1 dummy
+scoreboard objectives add xrpgc.charms.offhand.2 dummy
+scoreboard objectives add xrpgc.charms.offhand.3 dummy
+
 
 
 function xylo_rpg_core:_database
