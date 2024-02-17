@@ -1,0 +1,10 @@
+[
+  {
+    "function": "minecraft:reference",
+    "name": "xylo_rpg_core:items/charm/extract/_get_charm/set"
+  },
+  {
+    "function": "minecraft:reference",
+    "name": "xylo_rpg_core:items/equipment/generate/lore/set"
+  }
+]

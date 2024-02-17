@@ -8,3 +8,4 @@ execute in minecraft:overworld run item replace block 29999999 0 12341232 contai
 execute in minecraft:overworld run item replace block 29999999 0 12341232 container.1 from block ~ ~ ~ container.1
 function xylo_rpg_core:items/charm/insert/start
 execute as @a[limit=1] run item modify block ~ ~ ~ container.0 xylo_rpg_core:items/charm/insert/set
+item replace block ~ ~ ~ container.1 with minecraft:air

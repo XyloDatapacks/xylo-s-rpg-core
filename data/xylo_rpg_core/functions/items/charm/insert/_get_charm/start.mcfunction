@@ -8,4 +8,5 @@
 
 data modify storage xylo_rpg_core:op temp_charm set value {}
 execute in minecraft:overworld run data modify storage xylo_rpg_core:op temp_charm set from block 29999999 0 12341232 Items[{Slot:1b}].tag.xylo_rpg_core.charm
+execute in minecraft:overworld run data modify storage xylo_rpg_core:op temp_charm.item set from block 29999999 0 12341232 Items[{Slot:1b}]
 
