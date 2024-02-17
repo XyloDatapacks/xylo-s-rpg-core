@@ -33,6 +33,7 @@ execute if score #xrpgc.items.equipment.generate.lore.sockets xrpgc.op matches 1
 execute if score #xrpgc.items.equipment.generate.lore.sockets xrpgc.op matches 2.. run data modify storage xylo_rpg_core:op lore.socket2 set value [{"text":"[","color":"gray"},{"storage":"xylo_rpg_core:op","nbt":"sockets[1].icon","interpret": true,"color":"white"},{"text":"] ","color":"gray"}]
 execute if score #xrpgc.items.equipment.generate.lore.sockets xrpgc.op matches 3.. run data modify storage xylo_rpg_core:op lore.socket3 set value [{"text":"[","color":"gray"},{"storage":"xylo_rpg_core:op","nbt":"sockets[2].icon","interpret": true,"color":"white"},{"text":"] ","color":"gray"}]
 
+execute store success score #xrpgc.items.equipment.generate.lore.ability xrpgc.op run data modify storage xylo_rpg_core:op lore.ability set from storage xylo_rpg_core:op ability.description
 
 execute store success score #xrpgc.items.equipment.generate.lore.has_skills xrpgc.op if data storage xylo_rpg_core:op lore.skills[0]
 execute store success score #xrpgc.items.equipment.generate.lore.has_requirements xrpgc.op if data storage xylo_rpg_core:op lore.requirements[0]

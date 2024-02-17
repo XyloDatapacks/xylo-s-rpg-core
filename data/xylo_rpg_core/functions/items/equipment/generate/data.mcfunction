@@ -6,6 +6,7 @@
 
 function xylo_rpg_core:items/equipment/generate/level/start
 function xylo_rpg_core:items/equipment/generate/rarity/start
+data remove storage xylo_rpg_core:op ability
 function xylo_rpg_core:items/equipment/generate/skills/start
 function xylo_rpg_core:items/equipment/generate/requirements/start
 function xylo_rpg_core:items/equipment/generate/sockets/start

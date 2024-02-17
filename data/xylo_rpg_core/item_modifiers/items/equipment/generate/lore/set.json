@@ -68,6 +68,42 @@
     "lore": [
       [
         {
+          "translate": "item.xylo_rpg_core.generic.lore.ability",
+          "color": "gray",
+          "italic": false
+        }
+      ],
+      [
+        {
+          "nbt": "lore.ability",
+          "storage": "xylo_rpg_core:op",
+          "interpret": true,
+          "italic": false
+        }
+      ]
+    ],
+    "replace": false,
+    "conditions": [
+      {
+        "condition": "minecraft:value_check",
+        "value": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "#xrpgc.items.equipment.generate.lore.ability"
+          },
+          "score": "xrpgc.op"
+        },
+        "range": 1
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
           "translate": "item.xylo_rpg_core.generic.lore.skills",
           "color": "gray",
           "italic": false

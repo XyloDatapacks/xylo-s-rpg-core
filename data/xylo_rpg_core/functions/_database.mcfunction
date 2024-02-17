@@ -19,3 +19,8 @@ data modify storage xylo_rpg_core:data items.list append from storage xylo_rpg_c
 data modify storage xylo_rpg_core:op temp_list set value [{id:"minecraft:leather_helmet"},{id:"minecraft:leather_chestplate"},{id:"minecraft:leather_leggings"},{id:"minecraft:leather_boots"},{id:"minecraft:iron_helmet"},{id:"minecraft:iron_chestplate"},{id:"minecraft:iron_leggings"},{id:"minecraft:iron_boots"},{id:"minecraft:chainmail_helmet"},{id:"minecraft:chainmail_chestplate"},{id:"minecraft:chainmail_leggings"},{id:"minecraft:chainmail_boots"},{id:"minecraft:golden_helmet"},{id:"minecraft:golden_chestplate"},{id:"minecraft:golden_leggings"},{id:"minecraft:golden_boots"},{id:"minecraft:diamond_helmet"},{id:"minecraft:diamond_chestplate"},{id:"minecraft:diamond_leggings"},{id:"minecraft:diamond_boots"},{id:"minecraft:netherite_helmet"},{id:"minecraft:netherite_chestplate"},{id:"minecraft:netherite_leggings"},{id:"minecraft:netherite_boots"}]
 data modify storage xylo_rpg_core:op temp_list[].tag.xylo_rpg_core.proficiency set value {index:4,name:"constitution"}
 data modify storage xylo_rpg_core:data items.list append from storage xylo_rpg_core:op temp_list[]
+
+
+
+# abilities
+data modify storage xylo_rpg_core:data abilities set value [{id:1,name:'{"text":"ability 1"}',description:'{"text":"does a thing"}'},{id:2,name:'{"text":"ability 2"}',description:'{"text":"does another thing"}'},{id:3,name:'{"text":"ability 3"}',description:'{"text":"does a third thing"}'}]

@@ -47,7 +47,6 @@ execute if entity @s[advancements={xylo_rpg_core:level/kill_entity={bit31=true}}
 scoreboard players operation #xrpgc.level.xp_up xrpgc.op = $hit xrpgc.entities.level
 scoreboard players operation #xrpgc.level.xp_up xrpgc.op > #1 xconst
 function xylo_rpg_core:level/xp_up
-tellraw @s [{"text":"xp: +"},{"score":{"name":"#xrpgc.level.xp_up","objective":"xrpgc.op"}}," | ",{"score":{"name":"@s","objective":"xrpgc.xp"}}," / ",{"score":{"name":"@s","objective":"xrpgc.xp_to_next_level"}}]
 
 #==<Drops>==#
 scoreboard players operation #xrpgc.items.equipment.generate.level xrpgc.op = $hit xrpgc.entities.level

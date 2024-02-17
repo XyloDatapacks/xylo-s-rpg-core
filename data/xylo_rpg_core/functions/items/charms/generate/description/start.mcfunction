@@ -16,7 +16,10 @@ function xylo_rpg_core:items/charms/generate/description/requirement with storag
 # description if it is skills boost
 data modify storage xylo_rpg_core:op macro_data set value {strength:0, dexterity:0, agility:0, constitution:0, intelligence:0}
 data modify storage xylo_rpg_core:op macro_data merge from storage xylo_rpg_core:op skills
-execute if data storage xylo_rpg_core:op skills run function xylo_rpg_core:items/charms/generate/description/skills with storage xylo_rpg_core:op macro_data
+execute if data storage xylo_rpg_core:op temp_item.tag.xylo{id:"xylo_rpg_core:skill_charm"} run function xylo_rpg_core:items/charms/generate/description/skills with storage xylo_rpg_core:op macro_data
 
-# description if it has ability instead
-# TODO: add description for ability charm
+# description if ability
+data remove storage xylo_rpg_core:op macro_data
+data modify storage xylo_rpg_core:op macro_data.name set from storage xylo_rpg_core:op ability.name
+execute if data storage xylo_rpg_core:op temp_item.tag.xylo{id:"xylo_rpg_core:ability_charm"} run function xylo_rpg_core:items/charms/generate/description/ability with storage xylo_rpg_core:op macro_data
+

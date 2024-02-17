@@ -7,7 +7,6 @@
 
 tellraw @s[tag=xrpgc.debug.items.equipment.generate] "---------------------------"
 
-
 # get rolls
 data modify storage xylo_rpg_core:op macro_data set value {min:1}
 execute store result storage xylo_rpg_core:op macro_data.max int 2 run scoreboard players get #xrpgc.items.equipment.generate.rarity xrpgc.op
@@ -60,7 +59,6 @@ scoreboard players operation #xrpgc.items.equipment.generate.skills.missing xrpg
 tellraw @s[tag=xrpgc.debug.items.equipment.generate] ["missing: ",{"score":{"objective":"xrpgc.op","name":"#xrpgc.items.equipment.generate.skills.missing"}}]
 
 # assign missing points to a proficiency skill
-# TODO: add selection of the real prof skill
 scoreboard players operation #xrpgc.items.equipment.generate.skills.selection xrpgc.op = #xrpgc.items.equipment.generate.proficiency xrpgc.op
 execute if score #xrpgc.items.equipment.generate.skills.selection xrpgc.op matches 1 run scoreboard players operation #xrpgc.items.equipment.generate.skills.assigned.strength xrpgc.op += #xrpgc.items.equipment.generate.skills.missing xrpgc.op
 execute if score #xrpgc.items.equipment.generate.skills.selection xrpgc.op matches 2 run scoreboard players operation #xrpgc.items.equipment.generate.skills.assigned.dexterity xrpgc.op += #xrpgc.items.equipment.generate.skills.missing xrpgc.op
