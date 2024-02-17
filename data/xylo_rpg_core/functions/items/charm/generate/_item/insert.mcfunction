@@ -1,7 +1,7 @@
 #> xylo_rpg_core:items/charm/generate/_item/insert
 # @context: any
 # @within: xylo_rpg_core:items/charm/generate/item/start
-# @input: "#xrpgc.items.generate.level xrpgc.op"
+# @input: "#xrpgc.items.equipment.generate.level xrpgc.op"
 #
 
 # TODO: randomize between skill charms and ability charms

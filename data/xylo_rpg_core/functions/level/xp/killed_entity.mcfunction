@@ -50,8 +50,8 @@ function xylo_rpg_core:level/xp_up
 tellraw @s [{"text":"xp: +"},{"score":{"name":"#xrpgc.level.xp_up","objective":"xrpgc.op"}}," | ",{"score":{"name":"@s","objective":"xrpgc.xp"}}," / ",{"score":{"name":"@s","objective":"xrpgc.xp_to_next_level"}}]
 
 #==<Drops>==#
-scoreboard players operation #xrpgc.items.generate.level xrpgc.op = $hit xrpgc.entities.level
-execute if predicate xylo_library:random/1_5 run function xylo_rpg_core:items/give/give
+scoreboard players operation #xrpgc.items.equipment.generate.level xrpgc.op = $hit xrpgc.entities.level
+execute if predicate xylo_library:random/1_5 run function xylo_rpg_core:items/equipment/give/give
 
 
 # reset

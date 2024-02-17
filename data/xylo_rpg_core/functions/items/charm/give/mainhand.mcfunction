@@ -1,7 +1,7 @@
 #> xylo_rpg_core:items/charm/give/mainhand
 # @context: entity with mainhand slot
 # @within: any call
-# @input: "#xrpgc.items.generate.level xrpgc.op"
+# @input: "#xrpgc.items.equipment.generate.level xrpgc.op"
 
 
 function xylo_rpg_core:items/charm/generate/start

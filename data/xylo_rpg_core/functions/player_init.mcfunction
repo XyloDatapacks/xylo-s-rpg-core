@@ -7,7 +7,3 @@ execute unless score @s xrpgc.player_version = @s xrpgc.player_version run tellr
 # update version
 scoreboard players operation @s xrpgc.player_version = #xrpgc.pack_version xrpgc.op
 
-#==<Skills>==#
-
-# make class skills values valid
-function xylo_rpg_core:classes/validate_skills

@@ -1,0 +1,260 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [],
+    "replace": true
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "translate": "item.xylo_rpg_core.generic.lore.level",
+          "color": "gray",
+          "italic": false,
+          "extra": [
+            {
+              "nbt": "level",
+              "storage": "xylo_rpg_core:op",
+              "interpret": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "text": "[",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "nbt": "lore.rarity",
+          "storage": "xylo_rpg_core:op",
+          "interpret": true,
+          "italic": false
+        },
+        {
+          "text": "]",
+          "color": "gray",
+          "italic": false
+        }
+      ]
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "text": ""
+        }
+      ]
+    ],
+    "replace": false
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "translate": "item.xylo_rpg_core.generic.lore.skills",
+          "color": "gray",
+          "italic": false
+        }
+      ],
+      [
+        {
+          "nbt": "lore.skills",
+          "storage": "xylo_rpg_core:op",
+          "interpret": true,
+          "italic": false
+        }
+      ]
+    ],
+    "replace": false,
+    "conditions": [
+      {
+        "condition": "minecraft:value_check",
+        "value": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "#xrpgc.items.equipment.generate.lore.has_skills"
+          },
+          "score": "xrpgc.op"
+        },
+        "range": 1
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "translate": "item.xylo_rpg_core.generic.lore.requirements",
+          "color": "gray",
+          "italic": false
+        }
+      ],
+      [
+        {
+          "nbt": "lore.requirements",
+          "storage": "xylo_rpg_core:op",
+          "interpret": true,
+          "italic": false
+        }
+      ]
+    ],
+    "replace": false,
+    "conditions": [
+      {
+        "condition": "minecraft:value_check",
+        "value": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "#xrpgc.items.equipment.generate.lore.has_requirements"
+          },
+          "score": "xrpgc.op"
+        },
+        "range": 1
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "text": ""
+        }
+      ],
+      [
+        {
+          "translate": "item.xylo_rpg_core.generic.lore.sockets",
+          "color": "gray",
+          "italic": false
+        }
+      ],
+      [
+        {
+          "nbt": "lore.socket1",
+          "storage": "xylo_rpg_core:op",
+          "interpret": true,
+          "italic": false
+        },
+        {
+          "nbt": "sockets[0].description",
+          "storage": "xylo_rpg_core:op",
+          "interpret": true,
+          "italic": false
+        }
+      ]
+    ],
+    "replace": false,
+    "conditions": [
+      {
+        "condition": "minecraft:value_check",
+        "value": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "#xrpgc.items.equipment.generate.lore.sockets"
+          },
+          "score": "xrpgc.op"
+        },
+        "range": {
+          "min": 1
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "nbt": "lore.socket2",
+          "storage": "xylo_rpg_core:op",
+          "interpret": true,
+          "italic": false
+        },
+        {
+          "nbt": "sockets[1].description",
+          "storage": "xylo_rpg_core:op",
+          "interpret": true,
+          "italic": false
+        }
+      ]
+    ],
+    "replace": false,
+    "conditions": [
+      {
+        "condition": "minecraft:value_check",
+        "value": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "#xrpgc.items.equipment.generate.lore.sockets"
+          },
+          "score": "xrpgc.op"
+        },
+        "range": {
+          "min": 2
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "nbt": "lore.socket3",
+          "storage": "xylo_rpg_core:op",
+          "interpret": true,
+          "italic": false
+        },
+        {
+          "nbt": "sockets[2].description",
+          "storage": "xylo_rpg_core:op",
+          "interpret": true,
+          "italic": false
+        }
+      ]
+    ],
+    "replace": false,
+    "conditions": [
+      {
+        "condition": "minecraft:value_check",
+        "value": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "#xrpgc.items.equipment.generate.lore.sockets"
+          },
+          "score": "xrpgc.op"
+        },
+        "range": {
+          "min": 3
+        }
+      }
+    ]
+  }
+]

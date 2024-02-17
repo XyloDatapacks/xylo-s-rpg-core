@@ -1,86 +1,10 @@
 [
   {
-    "function": "minecraft:copy_nbt",
-    "source": {
-      "type": "minecraft:storage",
-      "source": "xylo_rpg_core:op"
-    },
-    "ops": [
-      {
-        "source": "temp_charm",
-        "target": "xylo_rpg_core.sockets[0]",
-        "op": "replace"
-      }
-    ],
-    "conditions": [
-      {
-        "condition": "minecraft:value_check",
-        "value": {
-          "type": "minecraft:score",
-          "target": {
-            "type": "minecraft:fixed",
-            "name": "#xrpgc.items.charm.insert.socket"
-          },
-          "score": "xrpgc.op"
-        },
-        "range": 1
-      }
-    ]
+    "function": "minecraft:reference",
+    "name": "xylo_rpg_core:items/charm/insert/_get_charm/set"
   },
   {
-    "function": "minecraft:copy_nbt",
-    "source": {
-      "type": "minecraft:storage",
-      "source": "xylo_rpg_core:op"
-    },
-    "ops": [
-      {
-        "source": "temp_charm",
-        "target": "xylo_rpg_core.sockets[1]",
-        "op": "replace"
-      }
-    ],
-    "conditions": [
-      {
-        "condition": "minecraft:value_check",
-        "value": {
-          "type": "minecraft:score",
-          "target": {
-            "type": "minecraft:fixed",
-            "name": "#xrpgc.items.charm.insert.socket"
-          },
-          "score": "xrpgc.op"
-        },
-        "range": 2
-      }
-    ]
-  },
-  {
-    "function": "minecraft:copy_nbt",
-    "source": {
-      "type": "minecraft:storage",
-      "source": "xylo_rpg_core:op"
-    },
-    "ops": [
-      {
-        "source": "temp_charm",
-        "target": "xylo_rpg_core.sockets[2]",
-        "op": "replace"
-      }
-    ],
-    "conditions": [
-      {
-        "condition": "minecraft:value_check",
-        "value": {
-          "type": "minecraft:score",
-          "target": {
-            "type": "minecraft:fixed",
-            "name": "#xrpgc.items.charm.insert.socket"
-          },
-          "score": "xrpgc.op"
-        },
-        "range": 3
-      }
-    ]
+    "function": "minecraft:reference",
+    "name": "xylo_rpg_core:items/equipment/generate/lore/set"
   }
 ]

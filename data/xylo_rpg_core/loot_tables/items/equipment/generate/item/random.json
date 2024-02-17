@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "weight": 2,
+          "type": "minecraft:loot_table",
+          "name": "xylo_rpg_core:items/equipment/generate/item/strength"
+        },
+        {
+          "weight": 3,
+          "type": "minecraft:loot_table",
+          "name": "xylo_rpg_core:items/equipment/generate/item/dexterity"
+        },
+        {
+          "weight": 1,
+          "type": "minecraft:loot_table",
+          "name": "xylo_rpg_core:items/equipment/generate/item/agility"
+        },
+        {
+          "weight": 4,
+          "type": "minecraft:loot_table",
+          "name": "xylo_rpg_core:items/equipment/generate/item/constitution"
+        },
+        {
+          "weight": 0,
+          "type": "minecraft:loot_table",
+          "name": "xylo_rpg_core:items/equipment/generate/item/intelligence"
+        }
+      ]
+    }
+  ]
+}
