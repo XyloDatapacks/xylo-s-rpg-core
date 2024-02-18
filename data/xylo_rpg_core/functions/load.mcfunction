@@ -111,6 +111,14 @@ scoreboard objectives add xrpgc.entities.level.29 dummy
 scoreboard objectives add xrpgc.entities.level.30 dummy
 scoreboard objectives add xrpgc.entities.level.31 dummy
 
+#==<Items>==#
+scoreboard players set #xrpgc.items.equipment.generate.level.wood_or_leather xrpgc.op 1
+scoreboard players set #xrpgc.items.equipment.generate.level.stone_or_chain xrpgc.op 10
+scoreboard players set #xrpgc.items.equipment.generate.level.iron xrpgc.op 20
+scoreboard players set #xrpgc.items.equipment.generate.level.golden xrpgc.op 30
+scoreboard players set #xrpgc.items.equipment.generate.level.diamond xrpgc.op 40
+scoreboard players set #xrpgc.items.equipment.generate.level.netherite xrpgc.op 50
+
 #==<Charms>==#
 scoreboard objectives add xrpgc.charms.head.1 dummy
 scoreboard objectives add xrpgc.charms.head.2 dummy

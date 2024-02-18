@@ -5,10 +5,172 @@
       "rolls": 1,
       "entries": [
         {
-          "weight": 1,
-          "type": "minecraft:tag",
-          "name": "xylo_rpg_core:equipment/proficiency_type/agility",
-          "expand": true
+          "type": "minecraft:loot_table",
+          "name": "xylo_rpg_core:items/equipment/generate/item/agility/wood_or_leather",
+          "expand": true,
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#xrpgc.items.equipment.generate.level"
+                },
+                "score": "xrpgc.op"
+              },
+              "range": {
+                "min": {
+                  "type": "minecraft:score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "#xrpgc.items.equipment.generate.level.wood_or_leather"
+                  },
+                  "score": "xrpgc.op"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "xylo_rpg_core:items/equipment/generate/item/agility/stone_or_chain",
+          "expand": true,
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#xrpgc.items.equipment.generate.level"
+                },
+                "score": "xrpgc.op"
+              },
+              "range": {
+                "min": {
+                  "type": "minecraft:score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "#xrpgc.items.equipment.generate.level.stone_or_chain"
+                  },
+                  "score": "xrpgc.op"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "xylo_rpg_core:items/equipment/generate/item/agility/iron",
+          "expand": true,
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#xrpgc.items.equipment.generate.level"
+                },
+                "score": "xrpgc.op"
+              },
+              "range": {
+                "min": {
+                  "type": "minecraft:score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "#xrpgc.items.equipment.generate.level.iron"
+                  },
+                  "score": "xrpgc.op"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "xylo_rpg_core:items/equipment/generate/item/agility/golden",
+          "expand": true,
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#xrpgc.items.equipment.generate.level"
+                },
+                "score": "xrpgc.op"
+              },
+              "range": {
+                "min": {
+                  "type": "minecraft:score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "#xrpgc.items.equipment.generate.level.golden"
+                  },
+                  "score": "xrpgc.op"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "xylo_rpg_core:items/equipment/generate/item/agility/diamond",
+          "expand": true,
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#xrpgc.items.equipment.generate.level"
+                },
+                "score": "xrpgc.op"
+              },
+              "range": {
+                "min": {
+                  "type": "minecraft:score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "#xrpgc.items.equipment.generate.level.diamond"
+                  },
+                  "score": "xrpgc.op"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "xylo_rpg_core:items/equipment/generate/item/agility/netherite",
+          "expand": true,
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#xrpgc.items.equipment.generate.level"
+                },
+                "score": "xrpgc.op"
+              },
+              "range": {
+                "min": {
+                  "type": "minecraft:score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "#xrpgc.items.equipment.generate.level.netherite"
+                  },
+                  "score": "xrpgc.op"
+                }
+              }
+            }
+          ]
         }
       ],
       "functions": [

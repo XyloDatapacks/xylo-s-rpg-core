@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:tag",
+          "name": "xylo_rpg_core:equipment/proficiency_type/strength/diamond",
+          "expand": true
+        }
+      ]
+    }
+  ]
+}
