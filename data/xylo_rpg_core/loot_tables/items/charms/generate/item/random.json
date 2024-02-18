@@ -5,7 +5,7 @@
       "rolls": 1,
       "entries": [
         {
-          "weight": 0,
+          "weight": 2,
           "type": "minecraft:loot_table",
           "name": "xylo_rpg_core:items/charms/generate/item/skill_charm"
         },
