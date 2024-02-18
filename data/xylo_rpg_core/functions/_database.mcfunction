@@ -23,4 +23,4 @@ data modify storage xylo_rpg_core:data items.list append from storage xylo_rpg_c
 
 
 # abilities
-data modify storage xylo_rpg_core:data abilities set value [{id:1,name:'{"text":"ability 1"}',description:'{"text":"does a thing"}'},{id:2,name:'{"text":"ability 2"}',description:'{"text":"does another thing"}'},{id:3,name:'{"text":"ability 3"}',description:'{"text":"does a third thing"}'}]
+data modify storage xylo_rpg_core:data abilities set value [{id:1,name:'{"text":"ability 1"}',description:'{"text":"does a thing"}'},{id:2,name:'{"text":"ability 2"}',description:'{"text":"does another thing"}'},{id:3,name:'{"text":"ability 3"}',description:'{"text":"does a third thing"}'},{id:4,name:'{"text":"ability 4"}',description:'{"text":"does a fourth thing"}'}]
