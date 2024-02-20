@@ -5,6 +5,7 @@
       "rolls": 1,
       "entries": [
         {
+          "weight": 1,
           "type": "minecraft:tag",
           "name": "xylo_rpg_core:equipment/proficiency_type/agility/golden",
           "expand": true

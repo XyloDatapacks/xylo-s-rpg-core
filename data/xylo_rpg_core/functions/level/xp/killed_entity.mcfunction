@@ -50,7 +50,7 @@ function xylo_rpg_core:level/xp_up
 
 #==<Drops>==#
 scoreboard players operation #xrpgc.items.equipment.generate.level xrpgc.op = $hit xrpgc.entities.level
-execute if predicate xylo_library:random/1_5 run function xylo_rpg_core:items/equipment/give/give
+execute if predicate xylo_library:random/1_5 run function xylo_rpg_core:items/drops/give_or_spawn
 
 
 # reset

@@ -5,6 +5,7 @@
       "rolls": 1,
       "entries": [
         {
+          "weight": 2,
           "type": "minecraft:tag",
           "name": "xylo_rpg_core:equipment/proficiency_type/dexterity/wood_or_leather",
           "expand": true
