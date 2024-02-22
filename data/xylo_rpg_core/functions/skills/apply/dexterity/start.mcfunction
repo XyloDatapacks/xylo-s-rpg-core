@@ -17,7 +17,7 @@ scoreboard players operation @s xrpgc.skills.dexterity.range_damage *= @s xrpgc.
 scoreboard players operation @s xrpgc.skills.dexterity.range_damage /= #100 xconst
 
 # max casting fatigue
-scoreboard players operation @s xem.spell.casting_fatigue.max = #xem.spell.casting_fatigue.max xem.op
-scoreboard players operation @s xem.spell.casting_fatigue.max *= @s xrpgc.skills.dexterity
-scoreboard players operation @s xem.spell.casting_fatigue.max /= #100 xconst
+scoreboard players operation @s xem.spell.casting_fatigue.max_base = #xem.spell.casting_fatigue.max xem.op
+scoreboard players operation @s xem.spell.casting_fatigue.max_base *= @s xrpgc.skills.dexterity
+scoreboard players operation @s xem.spell.casting_fatigue.max_base /= #100 xconst
 
