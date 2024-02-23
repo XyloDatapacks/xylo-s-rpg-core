@@ -57,6 +57,8 @@ scoreboard objectives add xrpgc.skills.intelligence_class dummy
 
 # related sb
 scoreboard objectives add xrpgc.skills.dexterity.range_damage dummy
+scoreboard objectives add xrpgc.skills.agility.jump_correction dummy
+scoreboard players set #xrpgc.skills.agility.jump_correction.max xrpgc.op 4
 
 #==<Classes>==#
 
