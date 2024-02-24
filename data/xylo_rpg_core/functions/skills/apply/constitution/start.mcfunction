@@ -13,7 +13,7 @@ function xylo_rpg_core:skills/apply/constitution/set with storage xylo_rpg_core:
 
 
 # max raw energy
-scoreboard players operation @s xem.spell.raw_energy.max_base = #xem.spell.raw_energy.max xem.op
+scoreboard players operation @s xem.spell.raw_energy.max_base = #xem.spell.raw_energy.max xem.const
 scoreboard players operation @s xem.spell.raw_energy.max_base *= #10 xconst
 scoreboard players operation @s xem.spell.raw_energy.max_base *= @s xrpgc.skills.constitution
 scoreboard players operation @s xem.spell.raw_energy.max_base /= #100 xconst
