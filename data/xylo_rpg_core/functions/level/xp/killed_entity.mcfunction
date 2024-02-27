@@ -45,11 +45,13 @@ execute if entity @s[advancements={xylo_rpg_core:level/kill_entity={bit31=true}}
 
 #==<Assign Points>==#
 scoreboard players operation #xrpgc.level.xp_up xrpgc.op = $hit xrpgc.entities.level
+scoreboard players operation #xrpgc.level.xp_up xrpgc.op < #250 xconst
 scoreboard players operation #xrpgc.level.xp_up xrpgc.op > #1 xconst
 function xylo_rpg_core:level/xp_up
 
 #==<Drops>==#
 scoreboard players operation #xrpgc.items.equipment.generate.level xrpgc.op = $hit xrpgc.entities.level
+scoreboard players operation #xrpgc.items.equipment.generate.level xrpgc.op < #100 xconst
 execute if predicate xylo_library:random/1_5 run function xylo_rpg_core:items/equipment/give/give_or_spawn
 
 

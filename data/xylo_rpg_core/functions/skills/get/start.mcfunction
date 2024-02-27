@@ -57,6 +57,16 @@ scoreboard players operation @s xrpgc.skills.agility /= #100 xconst
 scoreboard players operation @s xrpgc.skills.constitution /= #100 xconst
 scoreboard players operation @s xrpgc.skills.intelligence /= #100 xconst
 
+
+#==<Players Limit>==#
+execute if entity @s[type=!minecraft:player] run return 1
+scoreboard players operation @s xrpgc.skills.strength < #100 xconst
+scoreboard players operation @s xrpgc.skills.dexterity < #100 xconst
+scoreboard players operation @s xrpgc.skills.agility < #100 xconst
+scoreboard players operation @s xrpgc.skills.constitution < #100 xconst
+scoreboard players operation @s xrpgc.skills.intelligence < #100 xconst
+
+
 # debug
 tellraw @a[tag=xrpgc.debug.skills] ["--------------------------\nStrength: ",{"score":{"objective":"xrpgc.skills.strength","name":"@s"}},"\nDexterity: ",{"score":{"objective":"xrpgc.skills.dexterity","name":"@s"}},"\nAgility: ",{"score":{"objective":"xrpgc.skills.agility","name":"@s"}},"\nConstitution: ",{"score":{"objective":"xrpgc.skills.constitution","name":"@s"}},"\nIntelligence: ",{"score":{"objective":"xrpgc.skills.intelligence","name":"@s"}},"\n--------------------------"]
 
